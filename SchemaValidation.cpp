@@ -4,7 +4,7 @@
 #include "rapidjson/stringbuffer.h"
 #include "rapidjson/prettywriter.h"
 #include "SchemaValidation.h"
-#include "dirent.h"
+#include <dirent.h>
 #include <iostream>
 
 
