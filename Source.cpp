@@ -1,12 +1,6 @@
 // Schema Validator example
 
 // The example validates JSON text from stdin with a JSON schema specified in the argument.
-
-#include "rapidjson/error/en.h"
-#include "rapidjson/filereadstream.h"
-#include "rapidjson/schema.h"
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/prettywriter.h"
 #include "SchemaValidation.h"
 #include <iostream>
 #include <ctime>
