@@ -3,7 +3,6 @@
 /*
 This module shall include:
 1) a function for validating a schema against a list of jsons
-2) A function to time the function (1)
 */
 
 /* Includes */
