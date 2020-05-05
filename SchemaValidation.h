@@ -10,6 +10,7 @@ This module shall include:
 #include <string>
 #include <vector>
 #include "rapidjson/document.h"
+#include "rapidjson/schema.h"
 #include "JsonExceptions.h"
 
 /* Functions*/
