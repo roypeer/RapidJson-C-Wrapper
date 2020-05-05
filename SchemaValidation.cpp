@@ -53,7 +53,7 @@ bool validate_json_dir_with_schema(const std::string schema_path, const std::str
 				try
 				{
 					// Use the validator and reader to validate the JSON
-					std::string full_json_path = json_dir_path + "\\" + ep->d_name;
+					std::string full_json_path = json_dir_path + "/" + ep->d_name;
 					if (validate_json_with_schema_validator(full_json_path, validator, reader))
 					{
 						std::cout << "JSON matches schema: " << ep->d_name << std::endl;
@@ -66,7 +66,7 @@ bool validate_json_dir_with_schema(const std::string schema_path, const std::str
 				}
 
 				catch (FileNotFoundException) {
-					std::cout << "Couldn't find file: " << json_dir_path + "\\" + ep->d_name << std::endl;
+					std::cout << "Couldn't find file: " << json_dir_path + "/" + ep->d_name << std::endl;
 				}
 				catch (InvalidJsonException) {
 					std::cout << "File is not a valid JSON format: " << ep->d_name << std::endl;
