@@ -97,8 +97,7 @@ bool read_schema_to_document(const std::string& schema_path, Document& document)
 	char schema_buffer[MAX_FILE_BUFFER_SIZE];
 
 	// Open schema file
-	FILE* fp;
-	fopen_s(&fp, schema_path.c_str(), "r");
+	FILE* fp = fopen(schema_path.c_str(), "r");
 	if (!fp) {
 		printf("(RapidJson) Schema file '%s' not found\n", schema_path.c_str());
 		return FUNC_FAIL;
@@ -130,8 +129,7 @@ bool validate_json_with_schema_validator(const std::string json_path,
 	char json_buffer[MAX_FILE_BUFFER_SIZE];
 
 	// Open JSON file
-	FILE* json_file_pointer;
-	fopen_s(&json_file_pointer, json_path.c_str(), "r");
+	FILE* json_file_pointer = fopen(json_path.c_str(), "r");
 	if (!json_file_pointer) {
 		std::string error_msg = "Json file not found: ";
 		error_msg += json_path;
@@ -146,8 +144,8 @@ bool validate_json_with_schema_validator(const std::string json_path,
 
 		// Handle parse failure (throw exception)
 		char error_buffer[ERROR_BUFFER_SIZE];	
-		sprintf_s(error_buffer, ("Input is not a valid JSON\n, Error(offset %u): %s\n", static_cast<unsigned>(reader.GetErrorOffset()),
-			GetParseError_En(reader.GetParseErrorCode())));
+		snprintf(error_buffer, sizeof(error_buffer), "Input is not a valid JSON\n, Error(offset %u): %s\n", static_cast<unsigned>(reader.GetErrorOffset()),
+			GetParseError_En(reader.GetParseErrorCode());
 		throw(InvalidJsonException(error_buffer));
 	}
 
