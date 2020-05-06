@@ -11,6 +11,7 @@ using namespace rapidjson;
 
 /* Constants */
 static const std::string TIMER_FLAG = "-t";
+static const double NS_TO_MS = 1000000.0;
 
 /* typedefs */
 typedef std::chrono::high_resolution_clock Clock;
@@ -48,9 +49,7 @@ int main(int argc, char* argv[]) {
 		auto fp_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
 		std::cout << std::endl <<  "### Timer info ###" << std::endl;
 		std::cout << "Validation Time in nanoseconds (1/10^-9 sec): " << fp_ns.count() << "ns" <<  std::endl;
-		
+		std::cout << "Validation Time in milliseconds (1/10^-3 sec): " << fp_ns.count() / NS_TO_MS << "ms" << std::endl;
 	}
-	
-	
 	
 }
