@@ -146,13 +146,17 @@ bool validate_json_with_schema_validator(const std::string json_path,
 		char error_buffer[ERROR_BUFFER_SIZE];	
 		snprintf(error_buffer, sizeof(error_buffer), "Input is not a valid JSON\n, Error(offset %u): %s\n", static_cast<unsigned>(reader.GetErrorOffset()),
 			GetParseError_En(reader.GetParseErrorCode()));
+		
+		validator.Reset();
 		throw(InvalidJsonException(error_buffer));
 	}
 
 	// Check the validation result
 	if (validator.IsValid()) {
+		validator.Reset();
 		return FUNC_SUCCESS;
 	}
 
+	validator.Reset();
 	return FUNC_FAIL;	
 }

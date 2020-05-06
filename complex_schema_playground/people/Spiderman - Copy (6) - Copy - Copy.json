@@ -1,0 +1,33 @@
+{
+    "first_name": "Spiderman",
+    "last_name": "Robbins",
+    "id": "987654321",
+    "email": "spid@comp.com",
+    "age": 18,
+    "father_details": {
+        "first_name": "eve"
+    },
+    "mother_details": {
+        "last_name": "lin"
+    }, 
+    "city_of_residence": "New york",
+    "zip_code": "4456781",
+    "does_have_pet": true,
+    "number_of_siblings": 2,
+    "favorite_book": "Batman book",
+    "favorite_color": "Red",
+    "hobbies": [
+        "running",
+        "shooting stuff"
+    ],
+    "nationality": "American",
+    "religion": "Christianity",
+    "favorite_singer": "Tim Robbins",
+    "favorite_tv_show": "NCIS",
+    "country_of_birth": "Turkey",
+    "likes_coffee": true,
+    "yanny_or_laurel": "yanny",
+    "is_vegan": false,
+    "phone_number_optional": "054-3451267"
+
+}
