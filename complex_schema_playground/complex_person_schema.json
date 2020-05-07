@@ -1,0 +1,175 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Person",
+    "definitions": {
+        "Person": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first_name": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "minLength": 2
+                },
+                "last_name": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "minLength": 2
+                },
+                "id": {
+                    "type": "string",
+                    "minLength": 7,
+                    "maxLength": 30
+                },
+                "email": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9]{1,40}@[a-zA-Z0-9]{1,30}.com$",
+                    "minLength": 7,
+                    "maxLength": 200
+                },
+                "age": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 99
+                },
+                "father_details": {
+                    "$ref": "#/definitions/FatherDetails"
+                },
+                "mother_details": {
+                    "$ref": "#/definitions/MotherDetails"
+                },
+                "city_of_residence": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 100
+                },
+                "zip_code": {
+                    "type": "string",
+                    "format": "integer",
+                    "minLength": 7,
+                    "maxLength": 7
+                },
+                "does_have_pet": {
+                    "type": "boolean"
+                },
+                "number_of_siblings": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 40
+                },
+                "favorite_book": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_color": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "hobbies": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 50
+                    },
+                    "minItems": 0,
+                    "maxItems": 30,
+                    "uniqueItems": true
+                },
+                "nationality": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "religion": {
+                    "type": "string",
+                    "enum": ["Judaism", "Christianity", "Islam", "Buddhism"]
+                },
+                "favorite_singer": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_tv_show": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "country_of_birth": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "likes_coffee": {
+                    "type": "boolean"
+                },
+                "yanny_or_laurel": {
+                    "type": "string",
+                    "enum": ["yanny", "laurel"]
+                },
+                "is_vegan": {
+                    "type": "boolean"
+                },
+                "phone_number_optional": {
+                    "type": "string",
+                    "pattern": "^05[248]{1}-[0-9]{7}$",
+                    "minLength": 11,
+                    "maxLength": 11
+                }
+            },
+            "required": [
+                "age",
+                "city_of_residence",
+                "country_of_birth",
+                "does_have_pet",
+                "email",
+                "father_details",
+                "favorite_book",
+                "favorite_color",
+                "favorite_singer",
+                "favorite_tv_show",
+                "first_name",
+                "hobbies",
+                "id",
+                "is_vegan",
+                "last_name",
+                "likes_coffee",
+                "mother_details",
+                "nationality",
+                "number_of_siblings",
+                "religion",
+                "yanny_or_laurel",
+                "zip_code"
+            ],
+            "title": "Person"
+        },
+        "FatherDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "first_name"
+            ],
+            "title": "FatherDetails"
+        },
+        "MotherDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "last_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "last_name"
+            ],
+            "title": "MotherDetails"
+        }
+    }
+}

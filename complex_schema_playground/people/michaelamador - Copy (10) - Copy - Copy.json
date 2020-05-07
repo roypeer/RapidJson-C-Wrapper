@@ -1,0 +1,33 @@
+{
+    "first_name": "Michael",
+    "last_name": "Amador",
+    "id": "123456789",
+    "email": "mic@comp.com",
+    "age": 34,
+    "father_details": {
+        "first_name": "Tim"
+    },
+    "mother_details": {
+        "last_name": "Roxin"
+    }, 
+    "city_of_residence": "New york",
+    "zip_code": "6931232",
+    "does_have_pet": true,
+    "number_of_siblings": 2,
+    "favorite_book": "Moby Dick",
+    "favorite_color": "Pink",
+    "hobbies": [
+        "running",
+        "shooting stuff"
+    ],
+    "nationality": "American",
+    "religion": "Islam",
+    "favorite_singer": "Tim Robbins",
+    "favorite_tv_show": "NCIS",
+    "country_of_birth": "Turkey",
+    "likes_coffee": true,
+    "yanny_or_laurel": "yanny",
+    "is_vegan": false,
+    "phone_number_optional": "054-2234567"
+
+}
