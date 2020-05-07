@@ -1,6 +1,6 @@
 Binary in "/bin" folder may not neccessariy match current version.
 
-Complile (Deubg):
+Complile (Debug):
 g++ *.cpp *.h -o ValidateJsonDirectory
 
 Compile (Release with optimizations):
