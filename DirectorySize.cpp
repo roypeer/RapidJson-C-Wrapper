@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <dirent.h>
+#include <string.h>
 #include "DirectorySize.h"
 
 /* Constants */

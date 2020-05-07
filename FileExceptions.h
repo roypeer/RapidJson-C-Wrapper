@@ -1,7 +1,9 @@
 #pragma once
+#include <exception>
+#include <string>
 
 /* Exceptions */
-class FileOpenException : public std::exception
+class FileOpenException: public std::exception
 {
 	std::string _file_name;
 public:
