@@ -56,12 +56,12 @@ bool validate_json_dir_with_schema(const std::string schema_path, const std::str
 					std::string full_json_path = json_dir_path + "/" + ep->d_name;
 					if (validate_json_with_schema_validator(full_json_path, validator, reader))
 					{
-						std::cout << "JSON matches schema: " << ep->d_name << std::endl;
+						// std::cout << "JSON matches schema: " << ep->d_name << std::endl;
 					}
 
 					else
 					{
-						std::cout << "JSON does not match schema: " << ep->d_name << std::endl;
+						// std::cout << "JSON does not match schema: " << ep->d_name << std::endl;
 					}
 				}
 
@@ -100,6 +100,7 @@ bool read_schema_to_document(const std::string& schema_path, Document& document)
 	FILE* fp = fopen(schema_path.c_str(), "r");
 	if (!fp) {
 		printf("(RapidJson) Schema file '%s' not found\n", schema_path.c_str());
+		fclose(fp);
 		return FUNC_FAIL;
 	}
 
@@ -133,6 +134,7 @@ bool validate_json_with_schema_validator(const std::string json_path,
 	if (!json_file_pointer) {
 		std::string error_msg = "Json file not found: ";
 		error_msg += json_path;
+		fclose(json_file_pointer);
 		throw(FileNotFoundException(error_msg));
 	}
 
@@ -148,15 +150,18 @@ bool validate_json_with_schema_validator(const std::string json_path,
 			GetParseError_En(reader.GetParseErrorCode()));
 		
 		validator.Reset();
+		fclose(json_file_pointer);
 		throw(InvalidJsonException(error_buffer));
 	}
 
 	// Check the validation result
 	if (validator.IsValid()) {
 		validator.Reset();
+		fclose(json_file_pointer);
 		return FUNC_SUCCESS;
 	}
 
 	validator.Reset();
+	fclose(json_file_pointer);
 	return FUNC_FAIL;	
 }
