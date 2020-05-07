@@ -1,33 +1,92 @@
 {
     "first_name": "Spiderman",
+    "first_name2": "Spiderman",
+    "first_name3": "Spiderman",
     "last_name": "Robbins",
+    "last_name2": "Robbins",
+    "last_name3": "Robbins",
     "id": "987654321",
+    "id2": "987654321",
+    "id3": "987654321",
     "email": "spid@comp.com",
+    "email2": "spid@comp.com",
+    "email3": "spid@comp.com",
     "age": 18,
+    "age2": 18,
+    "age3": 18,
     "father_details": {
+        "first_name": "eve"
+    },
+    "father_details2": {
+        "first_name": "eve"
+    },
+    "father_details3": {
         "first_name": "eve"
     },
     "mother_details": {
         "last_name": "lin"
+    },
+    "mother_details2": {
+        "last_name": "lin"
+    },
+    "mother_details3": {
+        "last_name": "lin"
     }, 
     "city_of_residence": "New york",
+    "city_of_residence2": "New york",
+    "city_of_residence3": "New york",
     "zip_code": "4456781",
+    "zip_code2": "4456781",
+    "zip_code3": "4456781",
     "does_have_pet": true,
+    "does_have_pet2": true,
+    "does_have_pet3": true,
     "number_of_siblings": 2,
+    "number_of_siblings2": 2,
+    "number_of_siblings3": 2,
     "favorite_book": "Batman book",
+    "favorite_book2": "Batman book",
+    "favorite_book3": "Batman book",
     "favorite_color": "Red",
+    "favorite_color2": "Red",
+    "favorite_color3": "Red",
     "hobbies": [
         "running",
         "shooting stuff"
     ],
+    "hobbies2": [
+        "running",
+        "shooting stuff"
+    ],
+    "hobbies3": [
+        "running",
+        "shooting stuff"
+    ],
     "nationality": "American",
+    "nationality2": "American",
+    "nationality3": "American",
     "religion": "Christianity",
+    "religion2": "Christianity",
+    "religion3": "Christianity",
     "favorite_singer": "Tim Robbins",
+    "favorite_singer2": "Tim Robbins",
+    "favorite_singer3": "Tim Robbins",
     "favorite_tv_show": "NCIS",
+    "favorite_tv_show2": "NCIS",
+    "favorite_tv_show3": "NCIS",
     "country_of_birth": "Turkey",
+    "country_of_birth2": "Turkey",
+    "country_of_birth3": "Turkey",
     "likes_coffee": true,
+    "likes_coffee2": true,
+    "likes_coffee3": true,
     "yanny_or_laurel": "yanny",
+    "yanny_or_laurel2": "yanny",
+    "yanny_or_laurel3": "yanny",
     "is_vegan": false,
-    "phone_number_optional": "054-3451267"
-
+    "is_vegan2": false,
+    "is_vegan3": false,
+    "phone_number_optional": "054-3451267",
+    "phone_number_optional2": "054-3451267",
+    "phone_number_optional3": "054-3451267"
 }

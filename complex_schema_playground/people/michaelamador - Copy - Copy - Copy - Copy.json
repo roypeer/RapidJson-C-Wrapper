@@ -1,33 +1,92 @@
 {
     "first_name": "Michael",
+    "first_name2": "Michael",
+    "first_name3": "Michael",
     "last_name": "Amador",
-    "id": "123456789",
-    "email": "mic@comp.com",
+    "last_name2": "Amador",
+    "last_name3": "Amador",
+    "id": "987654321",
+    "id2": "987654321",
+    "id3": "987654321",
+    "email": "mic@ada.com",
+    "email2": "mic@ada.com",
+    "email3": "mic@ada.com",
     "age": 34,
+    "age2": 34,
+    "age3": 34,
     "father_details": {
-        "first_name": "Tim"
+        "first_name": "James"
+    },
+    "father_details2": {
+        "first_name": "James"
+    },
+    "father_details3": {
+        "first_name": "James"
     },
     "mother_details": {
-        "last_name": "Roxin"
+        "last_name": "Eva"
+    },
+    "mother_details2": {
+        "last_name": "Eva"
+    },
+    "mother_details3": {
+        "last_name": "Eva"
     }, 
     "city_of_residence": "New york",
-    "zip_code": "6931232",
+    "city_of_residence2": "New york",
+    "city_of_residence3": "New york",
+    "zip_code": "4456781",
+    "zip_code2": "4456781",
+    "zip_code3": "4456781",
     "does_have_pet": true,
+    "does_have_pet2": true,
+    "does_have_pet3": true,
     "number_of_siblings": 2,
-    "favorite_book": "Moby Dick",
-    "favorite_color": "Pink",
+    "number_of_siblings2": 2,
+    "number_of_siblings3": 2,
+    "favorite_book": "Batman book",
+    "favorite_book2": "Batman book",
+    "favorite_book3": "Batman book",
+    "favorite_color": "Yellow",
+    "favorite_color2": "Yellow",
+    "favorite_color3": "Yellow",
     "hobbies": [
         "running",
         "shooting stuff"
     ],
+    "hobbies2": [
+        "running",
+        "shooting stuff"
+    ],
+    "hobbies3": [
+        "running",
+        "shooting stuff"
+    ],
     "nationality": "American",
+    "nationality2": "American",
+    "nationality3": "American",
     "religion": "Islam",
-    "favorite_singer": "Tim Robbins",
-    "favorite_tv_show": "NCIS",
-    "country_of_birth": "Turkey",
+    "religion2": "Islam",
+    "religion3": "Islam",
+    "favorite_singer": "Michael Jackson",
+    "favorite_singer2": "Michael Jackson",
+    "favorite_singer3": "Michael Jackson",
+    "favorite_tv_show": "Cool Guys",
+    "favorite_tv_show2": "Cool Guys",
+    "favorite_tv_show3": "Cool Guys",
+    "country_of_birth": "Canada",
+    "country_of_birth2": "Canada",
+    "country_of_birth3": "Canada",
     "likes_coffee": true,
-    "yanny_or_laurel": "yanny",
+    "likes_coffee2": true,
+    "likes_coffee3": true,
+    "yanny_or_laurel": "laurel",
+    "yanny_or_laurel2": "laurel",
+    "yanny_or_laurel3": "laurel",
     "is_vegan": false,
-    "phone_number_optional": "054-2234567"
-
+    "is_vegan2": false,
+    "is_vegan3": false,
+    "phone_number_optional": "054-3456781",
+    "phone_number_optional2": "054-3456781",
+    "phone_number_optional3": "054-3456781"
 }

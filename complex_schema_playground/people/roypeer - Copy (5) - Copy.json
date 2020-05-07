@@ -1,33 +1,95 @@
 {
     "first_name": "Roy",
+    "first_name2": "Roy",
+    "first_name3": "Roy",
     "last_name": "Peter",
+    "last_name2": "Peter",
+    "last_name3": "Peter",
     "id": "123456789",
+    "id2": "123456789",
+    "id3": "123456789",
     "email": "royp@gmail.com",
+    "email2": "royp@gmail.com",
+    "email3": "royp@gmail.com",
     "age": 19,
+    "age2": 19,
+    "age3": 19,
     "father_details": {
+        "first_name": "Yaron"
+    },
+    "father_details2": {
+        "first_name": "Yaron"
+    },
+    "father_details3": {
         "first_name": "Yaron"
     },
     "mother_details": {
         "last_name": "Tamara"
+    },
+    "mother_details2": {
+        "last_name": "Tamara"
+    },
+    "mother_details3": {
+        "last_name": "Tamara"
     }, 
     "city_of_residence": "Tel-Aviv yafo",
+    "city_of_residence2": "Tel-Aviv yafo",
+    "city_of_residence3": "Tel-Aviv yafo",
     "zip_code": "6931234",
+    "zip_code2": "6931234",
+    "zip_code3": "6931234",
     "does_have_pet": false,
+    "does_have_pet2": false,
+    "does_have_pet3": false,
     "number_of_siblings": 2,
+    "number_of_siblings2": 2,
+    "number_of_siblings3": 2,
     "favorite_book": "The Wizard Of Oz",
+    "favorite_book2": "The Wizard Of Oz",
+    "favorite_book3": "The Wizard Of Oz",
     "favorite_color": "Pink",
+    "favorite_color2": "Pink",
+    "favorite_color3": "Pink",
     "hobbies": [
         "reading",
         "running",
         "programming"
     ],
+      "hobbies2": [
+        "reading",
+        "running",
+        "programming"
+    ],
+        "hobbies3": [
+        "reading",
+        "running",
+        "programming"
+    ],
     "nationality": "Israeli",
+    "nationality2": "Israeli",
+    "nationality3": "Israeli",
     "religion": "Judaism",
+    "religion2": "Judaism",
+    "religion3": "Judaism",
     "favorite_singer": "Elton John",
+    "favorite_singer2": "Elton John",
+    "favorite_singer3": "Elton John",
     "favorite_tv_show": "Fauda",
+    "favorite_tv_show2": "Fauda",
+    "favorite_tv_show3": "Fauda",
     "country_of_birth": "Zimbabwe",
+    "country_of_birth2": "Zimbabwe",
+    "country_of_birth3": "Zimbabwe",
     "likes_coffee": true,
+    "likes_coffee2": true,
+    "likes_coffee3": true,
     "yanny_or_laurel": "yanny",
+    "yanny_or_laurel2": "yanny",
+    "yanny_or_laurel3": "yanny",
     "is_vegan": false,
-    "phone_number_optional": "054-1234567"
+    "is_vegan2": false,
+    "is_vegan3": false,
+    "phone_number_optional": "054-1234567",
+    "phone_number_optional2": "054-1234567",
+    "phone_number_optional3": "054-1234567"
 }

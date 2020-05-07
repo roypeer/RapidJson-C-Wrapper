@@ -11,12 +11,42 @@
                     "maxLength": 30,
                     "minLength": 2
                 },
+                "first_name2": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "minLength": 2
+                },
+                "first_name3": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "minLength": 2
+                },
                 "last_name": {
                     "type": "string",
                     "maxLength": 100,
                     "minLength": 2
                 },
+                "last_name2": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "minLength": 2
+                },
+                "last_name3": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "minLength": 2
+                },
                 "id": {
+                    "type": "string",
+                    "minLength": 7,
+                    "maxLength": 30
+                },
+                "id2": {
+                    "type": "string",
+                    "minLength": 7,
+                    "maxLength": 30
+                },
+                "id3": {
                     "type": "string",
                     "minLength": 7,
                     "maxLength": 30
@@ -27,7 +57,29 @@
                     "minLength": 7,
                     "maxLength": 200
                 },
+                "email2": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9]{1,40}@[a-zA-Z0-9]{1,30}.com$",
+                    "minLength": 7,
+                    "maxLength": 200
+                },
+                "email3": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9]{1,40}@[a-zA-Z0-9]{1,30}.com$",
+                    "minLength": 7,
+                    "maxLength": 200
+                },
                 "age": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 99
+                },
+                "age2": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 99
+                },
+                "age3": {
                     "type": "integer",
                     "minimum": 0,
                     "maximum": 99
@@ -35,10 +87,32 @@
                 "father_details": {
                     "$ref": "#/definitions/FatherDetails"
                 },
+                "father_details2": {
+                    "$ref": "#/definitions/FatherDetails"
+                },
+                "father_details3": {
+                    "$ref": "#/definitions/FatherDetails"
+                },
                 "mother_details": {
                     "$ref": "#/definitions/MotherDetails"
                 },
+                "mother_details2": {
+                    "$ref": "#/definitions/MotherDetails"
+                },
+                "mother_details3": {
+                    "$ref": "#/definitions/MotherDetails"
+                },
                 "city_of_residence": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 100
+                },
+                "city_of_residence2": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 100
+                },
+                "city_of_residence3": {
                     "type": "string",
                     "minLength": 2,
                     "maxLength": 100
@@ -49,10 +123,38 @@
                     "minLength": 7,
                     "maxLength": 7
                 },
+                "zip_code2": {
+                    "type": "string",
+                    "format": "integer",
+                    "minLength": 7,
+                    "maxLength": 7
+                },
+                "zip_code3": {
+                    "type": "string",
+                    "format": "integer",
+                    "minLength": 7,
+                    "maxLength": 7
+                },
                 "does_have_pet": {
                     "type": "boolean"
                 },
+                "does_have_pet2": {
+                    "type": "boolean"
+                },
+                "does_have_pet3": {
+                    "type": "boolean"
+                },
                 "number_of_siblings": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 40
+                },
+                "number_of_siblings2": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 40
+                },
+                "number_of_siblings3": {
                     "type": "integer",
                     "minimum": 0,
                     "maximum": 40
@@ -62,7 +164,27 @@
                     "minLength": 3,
                     "maxLength": 50
                 },
+                "favorite_book2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_book3": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
                 "favorite_color": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_color2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_color3": {
                     "type": "string",
                     "minLength": 3,
                     "maxLength": 50
@@ -78,7 +200,39 @@
                     "maxItems": 30,
                     "uniqueItems": true
                 },
+                "hobbies2": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 50
+                    },
+                    "minItems": 0,
+                    "maxItems": 30,
+                    "uniqueItems": true
+                },
+                "hobbies3": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 50
+                    },
+                    "minItems": 0,
+                    "maxItems": 30,
+                    "uniqueItems": true
+                },
                 "nationality": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "nationality2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "nationality3": {
                     "type": "string",
                     "minLength": 3,
                     "maxLength": 50
@@ -87,7 +241,25 @@
                     "type": "string",
                     "enum": ["Judaism", "Christianity", "Islam", "Buddhism"]
                 },
+                "religion2": {
+                    "type": "string",
+                    "enum": ["Judaism", "Christianity", "Islam", "Buddhism"]
+                },
+                "religion3": {
+                    "type": "string",
+                    "enum": ["Judaism", "Christianity", "Islam", "Buddhism"]
+                },
                 "favorite_singer": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_singer2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_singer3": {
                     "type": "string",
                     "minLength": 3,
                     "maxLength": 50
@@ -97,7 +269,27 @@
                     "minLength": 3,
                     "maxLength": 50
                 },
+                "favorite_tv_show2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "favorite_tv_show3": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
                 "country_of_birth": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "country_of_birth2": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 50
+                },
+                "country_of_birth3": {
                     "type": "string",
                     "minLength": 3,
                     "maxLength": 50
@@ -105,14 +297,46 @@
                 "likes_coffee": {
                     "type": "boolean"
                 },
+                "likes_coffee2": {
+                    "type": "boolean"
+                },
+                "likes_coffee3": {
+                    "type": "boolean"
+                },
                 "yanny_or_laurel": {
+                    "type": "string",
+                    "enum": ["yanny", "laurel"]
+                },
+                "yanny_or_laurel2": {
+                    "type": "string",
+                    "enum": ["yanny", "laurel"]
+                },
+                "yanny_or_laurel3": {
                     "type": "string",
                     "enum": ["yanny", "laurel"]
                 },
                 "is_vegan": {
                     "type": "boolean"
                 },
+                "is_vegan2": {
+                    "type": "boolean"
+                },
+                "is_vegan3": {
+                    "type": "boolean"
+                },
                 "phone_number_optional": {
+                    "type": "string",
+                    "pattern": "^05[248]{1}-[0-9]{7}$",
+                    "minLength": 11,
+                    "maxLength": 11
+                },
+                "phone_number_optional2": {
+                    "type": "string",
+                    "pattern": "^05[248]{1}-[0-9]{7}$",
+                    "minLength": 11,
+                    "maxLength": 11
+                },
+                "phone_number_optional3": {
                     "type": "string",
                     "pattern": "^05[248]{1}-[0-9]{7}$",
                     "minLength": 11,
@@ -121,27 +345,71 @@
             },
             "required": [
                 "age",
+                "age2",
+                "age3",
                 "city_of_residence",
+                "city_of_residence2",
+                "city_of_residence3",
                 "country_of_birth",
+                "country_of_birth2",
+                "country_of_birth3",
                 "does_have_pet",
+                "does_have_pet2",
+                "does_have_pet3",
                 "email",
+                "email2",
+                "email3",
                 "father_details",
+                "father_details2",
+                "father_details3",
                 "favorite_book",
+                "favorite_book2",
+                "favorite_book3",
                 "favorite_color",
+                "favorite_color2",
+                "favorite_color3",
                 "favorite_singer",
+                "favorite_singer2",
+                "favorite_singer3",
                 "favorite_tv_show",
+                "favorite_tv_show2",
+                "favorite_tv_show3",
                 "first_name",
+                "first_name2",
+                "first_name3",
                 "hobbies",
+                "hobbies2",
+                "hobbies3",
                 "id",
+                "id2",
+                "id3",
                 "is_vegan",
+                "is_vegan2",
+                "is_vegan3",
                 "last_name",
+                "last_name2",
+                "last_name3",
                 "likes_coffee",
+                "likes_coffee2",
+                "likes_coffee3",
                 "mother_details",
+                "mother_details2",
+                "mother_details3",
                 "nationality",
+                "nationality2",
+                "nationality3",
                 "number_of_siblings",
+                "number_of_siblings2",
+                "number_of_siblings3",
                 "religion",
+                "religion2",
+                "religion3",
                 "yanny_or_laurel",
-                "zip_code"
+                "yanny_or_laurel2",
+                "yanny_or_laurel3",
+                "zip_code",
+                "zip_code2",
+                "zip_code3"
             ],
             "title": "Person"
         },
